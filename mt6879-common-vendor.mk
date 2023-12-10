@@ -7,6 +7,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-ets \
+    vendor/motorola/mt6879-common/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
+    vendor/motorola/mt6879-common/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.hardware.display.panel@1.0.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/com.motorola.hardware.display.panel@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.motorola.hardware.display.panel@1.1.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libMtkAinrEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkAinrEnh.so \
@@ -15,7 +17,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/lib_ainr_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_ainr_enh.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/lib_lvacfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lvacfs.so \
-    vendor/motorola/mt6879-common/proprietary/vendor/lib/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_speech_enh.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilterc.so \
@@ -31,6 +32,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk_pure.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
@@ -46,6 +51,7 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.0.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/com.motorola.hardware.display.panel@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.motorola.hardware.display.panel@1.1.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/hw/audio.primary.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mediatek.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/hw/audio.r_submix.mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mediatek.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libMtkAinrEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMtkAinrEnh.so \
@@ -54,7 +60,6 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/lib_ainr_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_ainr_enh.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/lib_lvacfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_lvacfs.so \
-    vendor/motorola/mt6879-common/proprietary/vendor/lib64/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_speech_enh.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_param_parser-vnd.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilter_vendor.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocompensationfilterc.so \
@@ -71,6 +76,10 @@ PRODUCT_COPY_FILES += \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libawinicsmartpaparse.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib64/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk_pure.so \
+    vendor/motorola/mt6879-common/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/motorola/mt6879-common/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
